@@ -1,1 +1,4 @@
-
+PROMPT UTILIZADA PARA EL APP
+Crea un aplicativo en Streamlit desde GitHub para predecir el riesgo de anemia infantil en 2025. En la barra lateral incluye mi nombre, código ISIL y un enlace a mi Google Colab en modo lector. La aplicación debe cargar un modelo de Machine Learning (modelo_random_forest.pkl) y un archivo con las columnas originales de entrenamiento (columnas_modelo.pkl) utilizando la librería joblib.
+Crea un formulario interactivo donde el usuario seleccione una provincia que extraiga los nombres limpiando las columnas guardadas, escriba la cantidad de niños evaluados en 2024 y elija el porcentaje de anemia en 2024 slider de 0 a 100.
+Finalmente, agrega un botón de calcular. Al presionarlo, el código debe crear un dataframe temporal de ceros con la estructura exacta de las columnas originales, llenar los datos numéricos del usuario, activar con un '1' la columna de la provincia seleccionada y ejecutar la predicción. Si el resultado es 1, muestra una alerta roja indicando riesgo crítico (>20%); si es 0, un mensaje de éxito verde indicando riesgo bajo.
